@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dusun Jambon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <style>
+   .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+      opacity: 0.9;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .nav-item{
+      margin-right: 15px;
+  }
+  .nav-item:hover {
+    background-color: tomato;
+  }
+  .nav-right{
+  }
+  .butt {
+    background-color: #2d2d30;
+    color: white;
+    border-style: none;
+  }
+  .butt:hover {
+    color: tomato;
+  }
+  .link {
+    color: white;
+  }
+  .link:hover {
+    color: tomato;
+  }
+  @media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 25%;
+        max-width: 100%; } }
+  .hero-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+  .carousel-multi-item-2 .card img {
+    border-radius: 2px; }
+  .fot{
+    color: white;
+  }
+
+  .fas{
+    color: #282828;
+  }
+  .col-10{
+    font-size: 18px;
+  }
+  .half-footer{
+    background-color: #282828;
+    height: 250px;
+  }
+  .somed{
+    margin-top: 10px;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.tombol {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+.tombol:hover {
+    background-color: #555555;
+    color: white;
+}
+
+  .txtsaran{
+    color: white;
+  }
+  .fa-2x{
+    color: white;
+  }
+  .fa-2x:hover{
+    color: tomato;
+  }
+  .footer{
+    background-color: #191919;
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+  }
+  .foot-medsos{
+    background-color: #282828;
+  }
+  .latotxt{
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+  }
+    .monserat{
+    font-family: Montserrat, sans-serif;
+    color: #282828;
+  }
+  </style>
+</head>
+<body>
+  <!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?5kt6MRWmoBG8W0P3OBXfOlCKHqxV70Zh";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
+<nav class="navbar navbar-default fixed-top">
+  <div class="container-fluid">
+      <ul class="nav navbar-nav justify-content-end">
+        <li class="nav-item"><a href=""><b>DUSUN JAMBON</b></a></li>
+      </ul>
+    <ul class="nav justify-content-end">
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="index.html" style="text-decoration: none;"> HOME </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="berita.html" style="text-decoration: none;"> BERITA </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="usaha.html" style="text-decoration: none;"> USAHA </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="galeri.html" style="text-decoration: none;"> GALERI </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="profil.html" style="text-decoration: none;"> PROFIL </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="kontak.html" style="text-decoration: none;"> KONTAK </a></button>
+    </div>
+  </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+   <div class="hero-image">
+    <img src="image/galeri.jpg" style="width: 100%;filter: grayscale(100%);">
+  <div class="hero-text">
+    <h1 class="monserat" style="color: white; font-size: 80px;"><b>GALERI FOTO</b></h1>
+  </div><br><br>
+</div> 
+  <div id="multi-item-satu" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+    <!--Controls-->
+    <div class="row">
+      <div class="col-1 d-flex flex-row"><a class="black-text" href="#multi-item-satu" data-slide="prev"><i class="fas fa-caret-square-left fa-2x pr-3"></i></a></div>
+      <div class="col-10 monserat" style="padding-bottom: 10px;">ULANG TAHUN BARKAS 2017</div>
+      <div class="col-1 d-flex flex-row-reverse"><a class="black-text" href="#multi-item-satu" data-slide="next"><i class="fas fa-caret-square-right fa-2x pl-3"></i></a></div>
+    </div>
+    <!--/.Controls-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.Second slide-->
+        <!--Third slide-->
+        <div class="carousel-item">
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.Third slide-->
+    </div>
+    <!--/.Slides-->
+  </div>
+  <!--BARIS KEDUA/-->
+      <div id="multi-item-dua" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+    <!--Controls-->
+    <div class="row">
+      <div class="col-1 d-flex flex-row"><a class="black-text" href="#multi-item-dua" data-slide="prev"><i class="fas fa-caret-square-left fa-2x pr-3"></i></a></div>
+      <div class="col-10 monserat" style="padding-bottom: 10px;">HARI KEMERDEKAAN 17 AGUSTUS 2017</div>
+      <div class="col-1 d-flex flex-row-reverse"><a class="black-text" href="#multi-item-dua" data-slide="next"><i class="fas fa-caret-square-right fa-2x pl-3"></i></a></div>
+    </div>
+    <!--/.Controls-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.Second slide-->
+        <!--Third slide-->
+        <div class="carousel-item">
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.Third slide-->
+    </div>
+    <!--/.Slides-->
+  </div>
+    <div id="multi-item-tiga" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+    <!--Controls-->
+    <div class="row">
+      <div class="col-1 d-flex flex-row"><a class="black-text" href="#multi-item-tiga" data-slide="prev"><i class="fas fa-caret-square-left fa-2x pr-3"></i></a></div>
+      <div class="col-10 monserat" style="padding-bottom: 10px;">FESTIVAL TAKBIR KELILING 2017</div>
+      <div class="col-1 d-flex flex-row-reverse"><a class="black-text" href="#multi-item-tiga" data-slide="next"><i class="fas fa-caret-square-right fa-2x pl-3"></i></a></div>
+    </div>
+    <!--/.Controls-->
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/ga.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/tu.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.Second slide-->
+        <!--Third slide-->
+        <div class="carousel-item">
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-3">
+                <div class="card">
+                    <img class="img-fluid" src="image/wa.jpg" alt="Card image cap">
+                </div>
+            </div>
+        </div>
+        <!--/.Third slide-->
+    </div>
+    <!--/.Slides-->
+  </div>
+</div>
+<div class="half-footer container-fluid">
+  <div class="row">
+    <div class="col-4 fot left">
+      <h5 class="monserat" style="color: white;letter-spacing: 10px;padding-top: 20px;">JADWAL KEGIATAN</h5>
+      <hr style="border-color: tomato;">
+
+    <div class="card" style="color:white; font-family: lato; padding-left: 20px; background-color: #191919;margin-bottom: 5px; ">
+    <cite>
+      "BAKTI SOSIAL DUSUN" <br>
+      Senin, 10 Juni 2018<br>
+      Jam 09.00 - Selesai<br></cite>
+    </div>
+    <div class="card" style="color:white; font-family: lato; padding-left: 20px; background-color: #191919;margin-bottom: 5px; ">
+      <cite>
+      "TAKBIR KELILING" <br>
+      Senin, 14 Juni 2018<br>
+      Jam 19.30 - Selesai</cite>
+    </div>
+
+    </div>
+    <div class="col-8 fot right latotxt">
+      <div ng-app="myApp" ng-controller="myCtrl" style="height: 200px;">
+        <button ng-click="myFunc()" class="button tombol" style="font-family: Montserrat;width: 100%;" ng-model="myCheck">COBA KLIK !</button>
+      
+      <div class="foot-medsos" style="background-color:#191919;" ng-show="showMe">
+          <div style="padding-top: 2px;padding-left: 10px;font-family: lato;color: white;">Bantu kami mengembangkan website ini dengan memberi saran :)</div>
+          <input type="textbox" name="" style="margin-left: 10px; width: 800px;height:60px; margin-bottom: 2px;">
+          <button class="button" style="margin-left: 10px;background-color: tomato;">Submit</button>
+      </div>
+      </div>
+      <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+        $scope.showMe = false;
+        $scope.myFunc = function() {
+        $scope.showMe = !$scope.showMe;
+    }
+  });
+</script>
+      <div class="somed">
+        <i class="fab fa-facebook-f fa-2x" style="padding-right: 40px; padding-left: 100px;"></i>
+        <i class="fab fa-instagram fa-2x" style="padding-right: 40px;"></i>
+        <i class="fas fa-envelope fa-2x" style="padding-right: 40px;"></i>
+        <i class="fab fa-line fa-2x" style="padding-right: 40px;"></i>
+        <i class="fab fa-weixin fa-2x" style="padding-right: 40px;"></i>
+        <i class="fab fa-twitter fa-2x" style="padding-right: 40px;"></i>
+        <i class="fab fa-pinterest-p fa-2x" style="padding-right: 40px;"></i>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p class="latotxt">~* Kelompok27 *~</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Dusun Jambon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+  <style>
+    .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 12px !important;
+      letter-spacing: 2px;
+      opacity: 0.9;
+      padding-top: 20px;
+      padding-bottom: 20px;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .nav-item{
+      margin-right: 15px;
+  }
+  .nav-item:hover {
+    background-color: tomato;
+  }
+  .nav-right{
+  }
+  .butt {
+    background-color: #2d2d30;
+    color: white;
+    border-style: none;
+  }
+  .butt:hover {
+    color: tomato;
+  }
+  .link {
+    color: white;
+  }
+  .link:hover {
+    color: tomato;
+  }
+  .img-fluid{
+    filter: grayscale(100%);
+  }
+  .img-fluid:hover{
+    filter: grayscale(0%);
+  }
+  #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    border: solid 1px white;
+  }
+  #panel {
+    background-color: tomato;
+    padding: 50px;
+    display: none;
+  }
+  #flip{
+    background-color:  #d5d5d5;
+  }
+  .quote{
+    text-align: center;
+    justify-content: center;
+  }
+  .column {
+    float: left;
+    width: 20%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+.half-footer{
+    background-color: #282828;
+    height: 250px;
+  }
+  .somed{
+    margin-top: 10px;
+  }
+  .button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white; 
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.tombol {
+    background-color: white;
+    color: black;
+    border: 2px solid #555555;
+}
+.tombol:hover {
+    background-color: #555555;
+    color: white;
+}
+
+  .txtsaran{
+    color: white;
+  }
+  .fa-2x{
+    color: white;
+  }
+  .fa-2x:hover{
+    color: tomato;
+  }
+  .footer{
+    background-color: #191919;
+    color: white;
+    height: 40px;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+  }
+  .foot-medsos{
+    background-color: #282828;
+  }
+  .latotxt{
+    font-family: Lato, sans-serif;
+    font-size: 12px;
+  }
+    .monserat{
+    font-family: Montserrat, sans-serif;
+    color: #282828;
+  }
+  
+  </style>
+</head>
+<body>
+  <!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?5kt6MRWmoBG8W0P3OBXfOlCKHqxV70Zh";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
+<nav class="navbar navbar-default fixed-top">
+  <div class="container-fluid">
+      <ul class="nav navbar-nav justify-content-end">
+        <li class="nav-item"><a href=""><b>DUSUN JAMBON</b></a></li>
+      </ul>
+    <ul class="nav justify-content-end">
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="index.html" style="text-decoration: none;"> HOME </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="berita.html" style="text-decoration: none;"> BERITA </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="usaha.html" style="text-decoration: none;"> USAHA </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="galeri.html" style="text-decoration: none;"> GALERI </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="profil.html" style="text-decoration: none;"> PROFIL </a></button>
+    </div>
+    <div class="nav-item">
+      <button class="butt">
+        <a class="link" href="kontak.html" style="text-decoration: none;"> KONTAK </a></button>
+    </div>
+  </ul>
+  </div>
+</nav>
+  <div class="container-fluid"><br><br><br><br>
+      <div>
+      <div id="flip" class="monserat btu">
+        <b class="monserat" style="font-size: 15px;color:#2d2d30;letter-spacing: 10px;">VISI</b></div>
+      <div id="panel" class="latotxt bta" style="color:white;"><h5><cite>"MEWUJUDKAN MASYARAKAT SEJAHTERA, MANDIRI DILANDASI IMAN DAN TAQWA"</cite></h5></div></div>
+      <div>
+      <div id="flip" class="monserat but">
+        <b class="monserat" style="font-size: 15px;color:#2d2d30;letter-spacing: 10px;">MISI</b></div>
+      <div id="panel" class="latotxt bat">
+        <p class="latotxt" style="font-size: 17px;color:white">
+          Melakukan pembangunan berkelanjutan<br>
+          Melakasanakan pembinaan generasi muda berkala<br>
+          Pembinaan mental dan spiritual pada masyarakat
+        </p>
+      </div>
+    </div>
+    <script> 
+  $(document).ready(function(){
+    $(".btu").mouseenter(function(){
+        $(".btu").css("background-color","grey");
+    });
+    $(".btu").mouseleave(function(){
+        $(".btu").css("background-color","#d5d5d5");
+    });
+    $(".btu").click(function(){
+        $(".bta").slideToggle("slow");
+    });
+    $(".but").mouseenter(function(){
+        $(".but").css("background-color","grey");
+    });
+    $(".but").mouseleave(function(){
+        $(".but").css("background-color","#d5d5d5");
+    });
+    $(".but").click(function(){
+        $(".bat").slideToggle("slow");
+    });
+  });
+  </script>
+    <br><br><br><br><br><br><br>
+  <div class="row">
+    <div class="col-2"></div>
+    <div class="col-8">
+     <p class="latotxt" style="font-size: 14px;text-align: justify;">Dusun Jambon dengan luas wilayah 54.900 Ha yang terbagi menjadi 4 RT. Tercatat ada 536 jiwa dengan 270 jiwa laki-laki dan 266 jiwa perempuan yang tinggal di wilayah ini. Sebagian besar penduduk bermata pencaharian sebagai petani/pekebun, meskipun hanya berselisih sedikit dengan pekerjaan yang lain.Dusun Jambon dengan luas wilayah 54.900 Ha yang terbagi menjadi 4 RT. Tercatat ada 536 jiwa dengan 270 jiwa laki-laki dan 266 jiwa perempuan yang tinggal di wilayah ini. Sebagian besar penduduk bermata pencaharian sebagai petani/pekebun, meskipun hanya berselisih sedikit dengan pekerjaan yang lain.</p>
+     <p class="latotxt" style="font-size: 14px;text-align: justify;">Dusun Jambon dengan luas wilayah 54.900 Ha yang terbagi menjadi 4 RT. Tercatat ada 536 jiwa dengan 270 jiwa laki-laki dan 266 jiwa perempuan yang tinggal di wilayah ini. Sebagian besar penduduk bermata pencaharian sebagai petani/pekebun, meskipun hanya berselisih sedikit dengan pekerjaan yang lain.</p>
+    </div>
+    <div class="col-2"></div>
+  </div>
+<br><br><br><br><br><br>
+<div class="kotak-pd">
+  <h4 style="text-align: center;" class="monserat">PERANGKAT DUSUN</h4><br>
+    <div class="row">
+      <div class="column"></div>
+  <div class="column">
+    <div class="card">
+      <img src="image/pp.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/pp.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/pp.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+
+<div class="column"></div>
+</div> 
+   <div class="row">
+  <div class="column"></div>
+  <div class="column">
+    <div class="card">
+      <img src="image/pp.png" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO &amp; Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/pp.png" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/pp.png" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="column"></div>
+  </div>
+</div>
+
+</div>
+    <div class="quote">
+      <hr style="color: grey; opacity: 50%;">
+      <h4><cite>"Urip Iku Urup"</cite></h4><br>
+      <p class="latotxt" style="color: tomato; font-size: 14px;">Hidup itu hendaknya memberi manfaat bagi orang lain disekitar kita</p>
+    </div>
+    <div>
+      <img class="img-fluid" src="image/profil.jpg"><br>
+      <hr style="color: grey; opacity: 50%;">
+    </div>
+  </div>
+<div class="half-footer container-fluid">
+  <div class="row">
+    <div class="col-4 fot left">
+      <h5 class="monserat" style="color: white;letter-spacing: 10px;padding-top: 20px;">JADWAL KEGIATAN</h5>
+      <hr style="border-color: tomato;">
+
+    <div class="card" style="color:white; font-family: lato; padding-left: 20px; background-color: #191919;margin-bottom: 5px; ">
+    <cite>
+      "BAKTI SOSIAL DUSUN" <br>
+      Senin, 10 Juni 2018<br>
+      Jam 09.00 - Selesai<br></cite>
+    </div>
+    <div class="card" style="color:white; font-family: lato; padding-left: 20px; background-color: #191919;margin-bottom: 5px; ">
+      <cite>
+      "TAKBIR KELILING" <br>
+      Senin, 14 Juni 2018<br>
+      Jam 19.30 - Selesai</cite>
+    </div>
+
+    </div>
+    <div class="col-8 fot right latotxt">
+      <div ng-app="myApp" ng-controller="myCtrl" style="height: 200px;">
+        <button ng-click="myFunc()" class="button tombol" style="font-family: Montserrat;width: 100%;" ng-model="myCheck">COBA KLIK !</button>
+      
+      <div class="foot-medsos" style="background-color:#191919;" ng-show="showMe">
+          <div style="padding-top: 2px;padding-left: 10px;font-family: lato;color: white;">Bantu kami mengembangkan website ini dengan memberi saran :)</div>
+          <input type="textbox" name="" style="margin-left: 10px; width: 800px;height:60px; margin-bottom: 2px;">
+          <button class="button" style="margin-left: 10px;background-color: tomato;">Submit</button>
+      </div>
+      </div>
+      <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope) {
+        $scope.showMe = false;
+        $scope.myFunc = function() {
+        $scope.showMe = !$scope.showMe;
+    }
+  });
+</script>
+      <div class="somed">
+        <i class="fab fa-facebook-f fa-2x" style="padding-right: 40px; padding-left: 100px;"></i>
+        <i class="fab fa-instagram fa-2x" style="padding-right: 40px;"></i>
+        <i class="fas fa-envelope fa-2x" style="padding-right: 40px;"></i>
+        <i class="fab fa-line fa-2x" style="padding-right: 40px;"></i>
+        <i class="fab fa-weixin fa-2x" style="padding-right: 40px;"></i>
+        <i class="fab fa-twitter fa-2x" style="padding-right: 40px;"></i>
+        <i class="fab fa-pinterest-p fa-2x" style="padding-right: 40px;"></i>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <p class="latotxt">~* Kelompok27 *~</p>
+</div>
+</body>
+</html>
